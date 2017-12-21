@@ -26,6 +26,13 @@ body
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.form-control::-webkit-input-placeholder {color: @white;}  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {color: @white;}  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {color: @white;}  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {color: @white;}  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {color: @white;}  /* Microsoft Edge */
+
 .container{
     #home-section{
         margin-top:10px;
@@ -160,7 +167,6 @@ a.logo {
 .btn:hover{
     color:@white;
 }
-
 .form-control{
     background-color: @backround-trasparent;
     border: @border;
@@ -179,6 +185,8 @@ a.forgot:hover{
         color:@white;
         text-decoration: none;
     }
+.login{width:49%;}
+.signup{width:49%;}
 /*Login Screen*/
 
 /*Sign Up Scree*/
